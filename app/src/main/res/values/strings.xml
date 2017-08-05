@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">My Rbac</string>
+    <string name="sign_in">ลงชื่อเข้าใช้งาน</string>
 </resources>
