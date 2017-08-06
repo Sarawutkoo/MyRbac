@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <!--bacnkbtt-->
+            <ImageView
+                android:id="@+id/imvBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_back" />
+            <!--title-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Please Sign up"
+                android:textColor="@color/textcolorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <!--save-->
+            <ImageView
+                android:id="@+id/imvSave"
+                android:src="@mipmap/ic_save"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <!--Content-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+
+        <!--username-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_name" />
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Name"
+                android:inputType="text" />
+        </LinearLayout>
+
+
+        <!--user-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_user" />
+
+
+            <EditText
+                android:id="@+id/edtuser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="user"
+                android:inputType="text" />
+        </LinearLayout>
+
+
+        <!--password-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_password" />
+
+
+            <EditText
+                android:id="@+id/edtpassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="password"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
